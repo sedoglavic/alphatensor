@@ -26,8 +26,5 @@ def get_sota_rank(a: int, b: int, c: int) -> int:
     return 0
   if a == 1:
     return b * c
-  if a == 2:
-    # Hopcroft & Kerr.
-    return int(math.ceil((3 * b * c + max(b, c)) / 2))
 
   return _SOTA[(a, b, c)]
